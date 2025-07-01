@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 222 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 80%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 222 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 350 89% 47%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 48 100% 50%;
+    --success-foreground: 0 0% 10%;
+
+    --positive: 144 76% 21%;
+    --positive-foreground: 0 0% 100%;
+
+    --decorative: 18 49% 42%;
+    --decorative-foreground: 0 0% 100%;
+
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 222 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 222 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 80%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 80%;
+
+    --accent: 222 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 350 89% 47%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 48 100% 50%;
+    --success-foreground: 0 0% 10%;
+
+    --positive: 144 76% 21%;
+    --positive-foreground: 0 0% 100%;
+
+    --decorative: 18 49% 42%;
+    --decorative-foreground: 0 0% 100%;
+
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 222 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-space-grotesk tracking-tight;
+    letter-spacing: -0.02em;
+  }
+  h1 {
+    @apply text-4xl font-bold leading-tight md:text-5xl;
+  }
+  h2 {
+    @apply text-3xl font-semibold leading-tight md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl font-normal leading-relaxed md:text-3xl text-txt-sec;
+  }
+  p {
+    @apply font-sans leading-relaxed max-w-[72ch];
+  }
+  code {
+    @apply font-mono text-accent-prim;
+  }
+  button {
+    @apply font-space-grotesk font-bold text-lg leading-none;
+  }
+}
+
+@layer components {
+  .split-reveal > span {
+    @apply block;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1.5 shadow-lg shadow-accent-prim/30;
+  }
+
+  .link-hover {
+    @apply relative;
+  }
+
+  .link-hover::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-accent-prim transition-all duration-300;
+  }
+
+  .link-hover:hover::after {
+    @apply w-full;
+  }
+}
