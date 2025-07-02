@@ -1,79 +1,67 @@
 import Image from "next/image"
-import { Github, Twitter } from "lucide-react"
+import { Github, Twitter, Linkedin } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const mentors = [
   {
     name: "Dr. Elena Rodriguez",
-    role: "Program Director",
-    bio: "Former ZK researcher at Protocol Labs with 10+ years experience in cryptography and distributed systems.",
+    role: "Program Director & ZK Researcher",
+    bio: "Former researcher at Protocol Labs with 10+ years experience in cryptography and distributed systems.",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
+    linkedin: "https://linkedin.com",
     featured: true,
   },
   {
     name: "Michael Chen",
-    role: "Technical Lead",
-    bio: "Core contributor to multiple ZK projects and author of 'Practical Zero-Knowledge Proofs'.",
+    role: "Core Contributor, Zama",
+    bio: "Core developer for the Zama FHE library and author of 'Practical Zero-Knowledge Proofs'.",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "Sophia Nakamoto",
-    role: "Cryptography Mentor",
-    bio: "Cryptography researcher specializing in SNARKs and privacy-preserving protocols.",
+    role: "Researcher, Ethereum Foundation PSE",
+    bio: "Cryptography researcher at the Privacy & Scaling Explorations group, specializing in SNARKs.",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "Jamal Washington",
-    role: "Engineering Mentor",
-    bio: "Lead engineer at Ethereum Foundation focusing on ZK rollups and scaling solutions.",
+    role: "Lead Engineer, StarkWare",
+    bio: "Lead engineer focusing on ZK rollups and scaling solutions with the Starknet ecosystem.",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "Aisha Patel",
-    role: "Applications Mentor",
-    bio: "Founder of ZK-Auth, building privacy-preserving authentication systems.",
+    role: "Founder, ZK-Auth",
+    bio: "Founder of ZK-Auth, building privacy-preserving authentication systems for dApps.",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
+    linkedin: "https://linkedin.com",
   },
   {
     name: "Carlos Mendez",
-    role: "Regional Lead",
+    role: "Regional Lead & Co-founder, EcuadorInTech",
     bio: "Ecuadorian tech entrepreneur connecting LATAM talent to global blockchain projects.",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
-  },
-  {
-    name: "Wei Zhang",
-    role: "Research Mentor",
-    bio: "PhD in Applied Cryptography with focus on efficient zero-knowledge proof systems.",
-    image: "/placeholder.svg?height=300&width=300",
-    github: "https://github.com",
-    twitter: "https://twitter.com",
-  },
-  {
-    name: "David Okonkwo",
-    role: "Protocol Mentor",
-    bio: "Protocol designer specializing in privacy-preserving smart contracts.",
-    image: "/placeholder.svg?height=300&width=300",
-    github: "https://github.com",
-    twitter: "https://twitter.com",
+    linkedin: "https://linkedin.com",
   },
 ]
 
 export default function MentorsPage() {
-  // Find the featured mentor (program director)
   const featuredMentor = mentors.find((mentor) => mentor.featured)
-  // Get all other mentors
   const otherMentors = mentors.filter((mentor) => !mentor.featured)
 
   return (
@@ -86,7 +74,7 @@ export default function MentorsPage() {
             <div className="max-w-2xl">
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6">Meet Our Mentors</h1>
               <div className="flex flex-col md:flex-row items-start gap-6 mb-8">
-                <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+                <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-2 border-accent-prim">
                   <Image
                     src={featuredMentor.image || "/placeholder.svg"}
                     alt={featuredMentor.name}
@@ -99,14 +87,33 @@ export default function MentorsPage() {
                   <h2 className="text-2xl font-bold mb-1">{featuredMentor.name}</h2>
                   <p className="text-accent-yellow font-space-grotesk mb-4">{featuredMentor.role}</p>
                   <p className="text-txt-sec mb-4">{featuredMentor.bio}</p>
-                  <div className="flex space-x-3">
-                    <a href={featuredMentor.github} className="text-txt-sec hover:text-accent-prim transition-colors">
+                  <div className="flex space-x-4">
+                    <a
+                      href={featuredMentor.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-txt-sec hover:text-accent-prim transition-colors"
+                    >
                       <Github className="h-5 w-5" />
                       <span className="sr-only">GitHub</span>
                     </a>
-                    <a href={featuredMentor.twitter} className="text-txt-sec hover:text-accent-prim transition-colors">
+                    <a
+                      href={featuredMentor.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-txt-sec hover:text-accent-prim transition-colors"
+                    >
                       <Twitter className="h-5 w-5" />
                       <span className="sr-only">Twitter</span>
+                    </a>
+                    <a
+                      href={featuredMentor.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-txt-sec hover:text-accent-prim transition-colors"
+                    >
+                      <Linkedin className="h-5 w-5" />
+                      <span className="sr-only">LinkedIn</span>
                     </a>
                   </div>
                 </div>
@@ -123,21 +130,40 @@ export default function MentorsPage() {
       {/* Mentor Grid */}
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">Mentor Team</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold tracking-tight mb-8 text-center">Mentor Team</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherMentors.map((mentor, i) => (
-              <Card key={i} className="overflow-hidden bg-bg-prim border border-txt-sec/20 card-hover">
-                <div className="aspect-square relative">
+              <Card key={i} className="group overflow-hidden bg-bg-prim border border-txt-sec/20 card-hover">
+                <div className="aspect-w-1 aspect-h-1 relative">
                   <Image src={mentor.image || "/placeholder.svg"} alt={mentor.name} fill className="object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg-prim to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg-prim via-bg-prim/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-4">
                     <div className="flex space-x-4">
-                      <a href={mentor.github} className="text-bg-light hover:text-accent-prim transition-colors">
+                      <a
+                        href={mentor.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-bg-light hover:text-accent-prim transition-colors"
+                      >
                         <Github className="h-6 w-6" />
                         <span className="sr-only">GitHub</span>
                       </a>
-                      <a href={mentor.twitter} className="text-bg-light hover:text-accent-prim transition-colors">
+                      <a
+                        href={mentor.twitter}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-bg-light hover:text-accent-prim transition-colors"
+                      >
                         <Twitter className="h-6 w-6" />
                         <span className="sr-only">Twitter</span>
+                      </a>
+                      <a
+                        href={mentor.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-bg-light hover:text-accent-prim transition-colors"
+                      >
+                        <Linkedin className="h-6 w-6" />
+                        <span className="sr-only">LinkedIn</span>
                       </a>
                     </div>
                   </div>
@@ -149,28 +175,6 @@ export default function MentorsPage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Office Hours Calendar */}
-      <section className="py-12 md:py-16 bg-bg-prim/90">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tight mb-6">Office Hours Calendar</h2>
-          <p className="text-txt-sec mb-8 max-w-2xl">
-            Mentors host regular office hours for one-on-one guidance and technical support. Check the calendar below
-            for availability and book a session.
-          </p>
-          <div className="border border-txt-sec/20 rounded-lg overflow-hidden h-[500px] bg-bg-prim">
-            <div className="p-8 flex items-center justify-center h-full">
-              <div className="text-center">
-                <p className="text-txt-sec mb-4">Google Calendar Embed (Read-only)</p>
-                <p className="text-sm text-txt-sec/70">
-                  The calendar would be embedded here, showing mentor availability and allowing participants to book
-                  sessions.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

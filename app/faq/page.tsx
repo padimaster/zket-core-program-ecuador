@@ -13,7 +13,7 @@ const faqItems = [
       {
         question: "What is the Global Foundations program?",
         answer:
-          "Global Foundations is an intensive 8-week program designed to transform talented developers into zero-knowledge proof specialists and open-source contributors. The program focuses on building practical skills in programmable cryptography with an emphasis on real-world applications.",
+          "Global Foundations is an intensive 6-week program designed to transform talented developers into zero-knowledge proof specialists and open-source contributors. The program focuses on building practical skills in programmable cryptography with an emphasis on real-world applications.",
       },
       {
         question: "Where is the program located?",
@@ -30,6 +30,16 @@ const faqItems = [
         answer:
           "This is a full-time program requiring approximately 40 hours per week. Participants should expect to be engaged Monday through Friday, with some optional weekend activities.",
       },
+      {
+        question: "What's the real difference between this and a bootcamp that costs thousands of dollars?",
+        answer:
+          "Unlike bootcamps that offer broad overviews, this is a specialized, deep-dive program focused exclusively on programmable cryptography. It's free because our goal is to cultivate top-tier open-source contributors, not generate revenue. The experience is closer to a research fellowship than a traditional bootcamp.",
+      },
+      {
+        question: "What level of math do I really need to succeed in the program?",
+        answer:
+          "You don't need to be a mathematician, but you should be comfortable with concepts from linear algebra and discrete math. We're looking for strong logical reasoning and a willingness to learn. Week 2 is dedicated to getting everyone up to speed on the necessary cryptographic math.",
+      },
     ],
   },
   {
@@ -38,22 +48,27 @@ const faqItems = [
       {
         question: "What are the eligibility requirements?",
         answer:
-          "Applicants should have strong programming skills, basic understanding of cryptography concepts, and a commitment to open-source contribution. While prior experience with blockchain or zero-knowledge proofs is beneficial, it's not required if you have a strong technical background.",
+          "Applicants should have strong programming skills (especially in languages like Rust, C++, or Go), a solid understanding of computer science fundamentals, and a demonstrated commitment to open-source contribution. While prior experience with blockchain or ZKPs is beneficial, it's not required if you have a strong technical background.",
       },
       {
         question: "What does the application process involve?",
         answer:
-          "The application process consists of three stages: an initial application form, a technical assessment to evaluate your coding abilities, and a final interview with program mentors for shortlisted candidates.",
+          "The application process consists of two main stages: an initial application form to assess your background and motivation, and a technical interview with program mentors for shortlisted candidates.",
       },
       {
         question: "When will I hear back about my application?",
         answer:
-          "We review applications on a rolling basis. You can expect to hear back within 2-3 weeks of your submission. If selected for the technical assessment, you'll receive instructions immediately.",
+          "We review applications on a rolling basis. You can expect to hear back within 2-3 weeks of your submission. If selected for an interview, you'll receive instructions to schedule it.",
       },
       {
         question: "Can I apply if I'm not from Ecuador?",
         answer:
-          "The program is open to international applicants. We aim to create a diverse cohort with participants from various backgrounds and regions.",
+          "Yes, the program is open to international applicants. We aim to create a diverse cohort with participants from various backgrounds and regions.",
+      },
+      {
+        question: "How can I balance this with my university studies?",
+        answer:
+          "This is an intensive, full-time program. It is best suited for students in their final semester, on a break, or who can make special arrangements with their university. The hands-on experience is designed to be a significant career accelerator, often considered equivalent to a high-level internship.",
       },
     ],
   },
@@ -68,17 +83,12 @@ const faqItems = [
       {
         question: "Are there job opportunities after the program?",
         answer:
-          "While employment is not guaranteed, many of our industry partners look to our program for talent recruitment. We also help connect graduates with job opportunities in the field and provide career guidance.",
+          "While employment is not guaranteed, our strategic partners and mentor network actively recruit from our graduates. We provide direct introductions and career guidance to help you navigate the ecosystem.",
       },
       {
         question: "Will I receive a certificate upon completion?",
         answer:
-          "Yes, all participants who successfully complete the program will receive a certificate of completion. More importantly, you'll have a portfolio of projects demonstrating your skills to potential employers.",
-      },
-      {
-        question: "What kind of projects will I work on?",
-        answer:
-          "Throughout the program, you'll work on increasingly complex projects, from basic ZK circuits to a full capstone project. Past projects have included privacy-preserving voting systems, zero-knowledge identity verification, and optimized cryptographic primitives.",
+          "Yes, all participants who successfully complete the program will receive a certificate of completion. More importantly, you'll have a portfolio of real-world contributions to open-source projects, which is highly valued by employers.",
       },
     ],
   },
