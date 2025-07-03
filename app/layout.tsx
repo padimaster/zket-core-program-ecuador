@@ -30,22 +30,32 @@ const ibmPlexMono = IBMPlexMono({
 })
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://www.zkcero.xyz'),
   title: "ZKET Core Program - Ecuador",
-  description: "Building the next generation of ZKP Contributors. From the center of the world. ",
+  description: "Building the next generation of ZKP Contributors. From the center of the world.",
   icons: {
     icon: "/favicon.png",
   },
   openGraph: {
-    title: "ZKET Core Program - Ecuador",
-    description: "Building the next generation of ZKP Contributors. From the center of the world. ",
-    images: ["/open-graph.png"],
+    url: "https://www.zkcero.xyz/",
     type: "website",
+    title: "ZKET Core Program - Ecuador",
+    description: "Building the next generation of ZKP Contributors. From the center of the world.",
+    images: [
+      {
+        url: "/open-graph.png",
+        width: 1200,
+        height: 630,
+        alt: "ZKET Core Program - Ecuador",
+      }
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    domain: "zkcero.xyz",
+    url: "https://www.zkcero.xyz/",
     title: "ZKET Core Program - Ecuador",
-    description: "Building the next generation of ZKP Contributors. From the center of the world. ",
+    description: "Building the next generation of ZKP Contributors. From the center of the world.",
     images: ["/open-graph.png"],
   },
 }
