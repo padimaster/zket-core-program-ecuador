@@ -150,7 +150,7 @@ export default function ApplyPage() {
                   <Card className="flex-1 md:max-w-sm bg-white border border-gray-200 hover:border-accent-yellow/40 transition-all duration-300 ml-4 md:ml-6 md:order-1">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="h3-dark text-gray-900">Technical Interview</h3>
+                        <h3 className="h3-dark text-gray-900">Interview</h3>
                         <span className="text-xs bg-accent-yellow text-white px-2 py-1 rounded-full whitespace-nowrap">
                           ~30 min
                         </span>
