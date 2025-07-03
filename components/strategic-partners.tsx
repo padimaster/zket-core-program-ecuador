@@ -1,6 +1,11 @@
 import Image from "next/image"
 
-const partners = [
+interface Partner {
+  name: string;
+  logo: string;
+}
+
+const partners: Partner[] = [
   
 ]
 
@@ -8,8 +13,8 @@ export default function StrategicPartners() {
   return (
     <section className="py-12 md:py-16 bg-bg-prim/90">
       <div className="container px-4 mx-auto text-center md:px-6">
-        <h2 className="text-3xl font-bold tracking-tight mb-4">Backed by Ecuador's Leading Institutions</h2>
-        <p className="max-w-2xl mx-auto mb-10 text-txt-sec">
+        <h2 className="h2-section">Backed by Ecuador's Leading Institutions</h2>
+        <p className="p-large mx-auto mb-10">
           Our program is anchored in the local ecosystem, supported by top universities and tech communities that share
           our vision.
         </p>

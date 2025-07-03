@@ -15,12 +15,12 @@ export default function ProgramPage() {
               6-Week Intensive Program
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-bg-light">
+            <h1 className="h1-hero mb-6">
               ZKET Core Program
               <span className="block text-accent-prim">Ecuador 2025</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-txt-sec mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="p-large mx-auto mb-8">
               An initiative by the ZK Education Team of the Ethereum Foundation. 
               6 intensive weeks of Programmable Cryptography (ProgCrypto) training, 
               transforming talented developers into zero-knowledge proof specialists.
@@ -33,28 +33,28 @@ export default function ProgramPage() {
                   <CheckCircle className="h-6 w-6 text-white" />
                 </div>
                 <div className="text-lg font-bold text-accent-prim mb-1">100% Free</div>
-                <div className="text-sm text-txt-sec">No tuition fees</div>
+                <div className="p-small">No tuition fees</div>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 rounded-full bg-accent-yellow flex items-center justify-center mb-3">
                   <Star className="h-6 w-6 text-white" />
                 </div>
                 <div className="text-lg font-bold text-accent-prim mb-1">Elite Mentors</div>
-                <div className="text-sm text-txt-sec">World-class experts</div>
+                <div className="p-small">World-class experts</div>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 rounded-full bg-accent-prim flex items-center justify-center mb-3">
                   <Award className="h-6 w-6 text-white" />
                 </div>
                 <div className="text-lg font-bold text-accent-prim mb-1">Grant Access</div>
-                <div className="text-sm text-txt-sec">Funding opportunities</div>
+                <div className="p-small">Funding opportunities</div>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 rounded-full bg-accent-yellow flex items-center justify-center mb-3">
                   <TrendingUp className="h-6 w-6 text-white" />
                 </div>
                 <div className="text-lg font-bold text-accent-prim mb-1">Career Ready</div>
-                <div className="text-sm text-txt-sec">Portfolio & network</div>
+                <div className="p-small">Portfolio & network</div>
               </div>
             </div>
 
@@ -72,8 +72,8 @@ export default function ProgramPage() {
       <section className="py-16 md:py-24 bg-bg-prim">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight mb-4 md:text-4xl text-bg-light">How The Program Works</h2>
-            <p className="text-txt-sec text-lg max-w-3xl mx-auto">
+            <h2 className="h2-section">How The Program Works</h2>
+            <p className="p-large mx-auto">
               Our hybrid learning model combines the flexibility of online self-study with the power of in-person collaboration, 
               giving you the best of both worlds in Quito's dynamic tech scene.
             </p>
@@ -81,7 +81,7 @@ export default function ProgramPage() {
 
           {/* Learning Format */}
           <div className="max-w-6xl mx-auto mb-16">
-            <h3 className="text-2xl font-bold text-center mb-8 text-bg-light">Hybrid Learning Format</h3>
+            <h3 className="h3-subsection text-center mb-8">Hybrid Learning Format</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-bg-prim border border-accent-prim/30 hover:border-accent-prim/50 transition-colors duration-300">
                 <CardContent className="p-6">
@@ -89,13 +89,13 @@ export default function ProgramPage() {
                     <div className="w-12 h-12 rounded-full bg-accent-prim flex items-center justify-center mr-4">
                       <Clock className="h-6 w-6 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-bg-light">Weekday Online Sessions</h4>
+                    <h4 className="h3-subsection">Weekday Online Sessions</h4>
                   </div>
-                  <p className="text-txt-sec text-sm leading-relaxed mb-4">
+                  <p className="p-small mb-4">
                     Self-paced learning modules, interactive tutorials, and hands-on coding exercises you can complete 
                     from anywhere, anytime during the week.
                   </p>
-                  <ul className="text-txt-sec text-sm space-y-2">
+                  <ul className="p-small space-y-2">
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 bg-accent-prim rounded-full mr-2"></span>
                       Flexible scheduling around your commitments
@@ -118,13 +118,13 @@ export default function ProgramPage() {
                     <div className="w-12 h-12 rounded-full bg-accent-yellow flex items-center justify-center mr-4">
                       <Users className="h-6 w-6 text-white" />
                     </div>
-                    <h4 className="text-lg font-bold text-bg-light">Saturday In-Person Sessions</h4>
+                    <h4 className="h3-subsection">Saturday In-Person Sessions</h4>
                   </div>
-                  <p className="text-txt-sec text-sm leading-relaxed mb-4">
+                  <p className="p-small mb-4">
                     Intensive collaborative sessions at our fully-equipped coworking space in Quito, 
                     where theory meets practice in a supportive, high-energy environment.
                   </p>
-                  <ul className="text-txt-sec text-sm space-y-2">
+                  <ul className="p-small space-y-2">
                     <li className="flex items-center">
                       <span className="w-1.5 h-1.5 bg-accent-yellow rounded-full mr-2"></span>
                       Hands-on workshops with real projects
@@ -145,15 +145,15 @@ export default function ProgramPage() {
 
           {/* Weekly Schedule */}
           <div className="max-w-5xl mx-auto mb-16">
-            <h3 className="text-2xl font-bold text-center mb-8 text-bg-light">Your Weekly Schedule</h3>
+            <h3 className="h3-subsection text-center mb-8">Your Weekly Schedule</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="bg-bg-prim border border-txt-sec/20 hover:border-accent-prim/30 transition-colors duration-300">
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 rounded-full bg-accent-prim mx-auto mb-4 flex items-center justify-center">
                     <Calendar className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="font-bold text-bg-light mb-2">Thursday Keynotes</h4>
-                  <p className="text-txt-sec text-sm">
+                  <h4 className="h3-subsection mb-2">Thursday Keynotes</h4>
+                  <p className="p-small">
                     Industry experts share cutting-edge insights on cryptography, blockchain, and emerging technologies.
                   </p>
                 </CardContent>
@@ -164,8 +164,8 @@ export default function ProgramPage() {
                   <div className="w-12 h-12 rounded-full bg-accent-prim mx-auto mb-4 flex items-center justify-center">
                     <Coffee className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="font-bold text-bg-light mb-2">Mentor Office Hours</h4>
-                  <p className="text-txt-sec text-sm">
+                  <h4 className="h3-subsection mb-2">Mentor Office Hours</h4>
+                  <p className="p-small">
                     One-on-one sessions with world-class mentors to discuss projects, resolve challenges, and accelerate your growth.
                   </p>
                 </CardContent>
@@ -176,8 +176,8 @@ export default function ProgramPage() {
                   <div className="w-12 h-12 rounded-full bg-accent-yellow mx-auto mb-4 flex items-center justify-center">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="font-bold text-bg-light mb-2">Saturday Deep Dive</h4>
-                  <p className="text-txt-sec text-sm">
+                  <h4 className="h3-subsection mb-2">Saturday Deep Dive</h4>
+                  <p className="p-small">
                     Full-day intensive sessions with hands-on coding, project development, and collaborative problem-solving.
                   </p>
                 </CardContent>
@@ -187,7 +187,7 @@ export default function ProgramPage() {
 
           {/* Program Benefits */}
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-center mb-8 text-bg-light">Everything You Need to Succeed</h3>
+            <h3 className="h3-subsection text-center mb-8">Everything You Need to Succeed</h3>
             <div className="grid sm:grid-cols-2 gap-6">
               <Card className="bg-bg-prim border border-accent-prim/30 hover:border-accent-prim/50 transition-colors duration-300">
                 <CardContent className="p-6">
@@ -195,10 +195,11 @@ export default function ProgramPage() {
                     <div className="w-10 h-10 rounded-full bg-accent-prim flex items-center justify-center mr-4">
                       <Utensils className="h-5 w-5 text-white" />
                     </div>
-                    <h4 className="font-bold text-bg-light">Food & Beverages Included</h4>
+                    <h4 className="h3-subsection">Food & Beverages Included</h4>
                   </div>
-                  <p className="text-txt-sec text-sm">
-                    All meals and refreshments during Saturday sessions are provided. Focus entirely on learning while we handle the logistics.
+                  <p className="p-small">
+                    Fuel your learning with free meals, snacks, and beverages during all in-person sessions. 
+                    Focus entirely on coding and connecting without worrying about the basics.
                   </p>
                 </CardContent>
               </Card>
@@ -209,38 +210,11 @@ export default function ProgramPage() {
                     <div className="w-10 h-10 rounded-full bg-accent-yellow flex items-center justify-center mr-4">
                       <Award className="h-5 w-5 text-white" />
                     </div>
-                    <h4 className="font-bold text-bg-light">Direct Grant Access</h4>
+                    <h4 className="h3-subsection">Mentorship & Career Support</h4>
                   </div>
-                  <p className="text-txt-sec text-sm">
-                    Exclusive pathways to funding for continuing your projects and research through our extensive network of partners and foundations.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-bg-prim border border-accent-prim/30 hover:border-accent-prim/50 transition-colors duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 rounded-full bg-accent-prim flex items-center justify-center mr-4">
-                      <MapPin className="h-5 w-5 text-white" />
-                    </div>
-                    <h4 className="font-bold text-bg-light">Premium Workspace</h4>
-                  </div>
-                  <p className="text-txt-sec text-sm">
-                    State-of-the-art coworking space in Quito with high-speed internet, modern equipment, and all the amenities you need.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-bg-prim border border-accent-yellow/30 hover:border-accent-yellow/50 transition-colors duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 rounded-full bg-accent-yellow flex items-center justify-center mr-4">
-                      <TrendingUp className="h-5 w-5 text-white" />
-                    </div>
-                    <h4 className="font-bold text-bg-light">Career Launch Pad</h4>
-                  </div>
-                  <p className="text-txt-sec text-sm">
-                    Build a portfolio of impactful projects, develop industry connections, and receive personalized job placement assistance.
+                  <p className="p-small">
+                    Get guidance from industry leaders, portfolio reviews, mock interviews, and direct introductions 
+                    to hiring partners in the zero-knowledge space.
                   </p>
                 </CardContent>
               </Card>
@@ -253,22 +227,22 @@ export default function ProgramPage() {
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight mb-4 md:text-4xl">6-Week Learning Journey</h2>
-            <p className="text-txt-sec text-lg max-w-3xl mx-auto">
+            <h2 className="h2-section">6-Week Learning Journey</h2>
+            <p className="p-large mx-auto">
               A carefully crafted curriculum that takes you from ZK fundamentals to building production-ready applications, 
               with each week building upon the previous to ensure deep, practical understanding.
             </p>
           </div>
         </div>
-        <CurriculumTimeline />
+      <CurriculumTimeline />
       </section>
 
       {/* Capstone & Demo Day */}
       <section className="py-16 md:py-24 bg-bg-prim">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-6 md:text-4xl text-bg-light">Launch Your ZK Career</h2>
-            <p className="text-txt-sec text-lg mb-8 leading-relaxed">
+            <h2 className="h2-section">Launch Your ZK Career</h2>
+            <p className="p-large mx-auto mb-8">
               The program culminates in Demo Day, where you'll present your capstone project to industry leaders, 
               investors, and potential employers. Graduate with a powerful portfolio, industry connections, 
               and direct pathways to grants and career opportunities.

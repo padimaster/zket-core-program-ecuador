@@ -91,36 +91,86 @@
   body {
     @apply bg-background text-foreground;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-space-grotesk tracking-tight;
-    letter-spacing: -0.02em;
-  }
-  h1 {
-    @apply text-4xl font-bold leading-tight md:text-5xl;
-  }
-  h2 {
-    @apply text-3xl font-semibold leading-tight md:text-4xl;
-  }
-  h3 {
-    @apply text-2xl font-normal leading-relaxed md:text-3xl text-txt-sec;
-  }
-  p {
-    @apply font-sans leading-relaxed max-w-[72ch];
-  }
-  code {
-    @apply font-mono text-accent-prim;
-  }
-  button {
-    @apply font-space-grotesk font-bold text-lg leading-none;
-  }
 }
 
 @layer components {
+  /* Standard Typography System */
+  h1 {
+    @apply text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl text-bg-light font-space-grotesk mb-6;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  
+  h2 {
+    @apply text-3xl font-bold tracking-tight md:text-4xl text-bg-light font-space-grotesk mb-4;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    @apply text-2xl font-semibold tracking-tight md:text-3xl text-bg-light font-space-grotesk mb-3;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+
+  p {
+    @apply text-base text-txt-sec font-sans leading-relaxed mb-4;
+    max-width: 65ch;
+  }
+
+  /* Variant classes for different contexts */
+  .h1-hero {
+    @apply text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl text-bg-light font-space-grotesk;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  .h2-section {
+    @apply text-3xl font-bold tracking-tight md:text-4xl text-bg-light font-space-grotesk;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .h3-subsection {
+    @apply text-xl font-semibold tracking-tight md:text-2xl text-bg-light font-space-grotesk;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+  }
+
+  /* Dark background variants */
+  .h2-dark {
+    @apply text-3xl font-bold tracking-tight md:text-4xl text-bg-prim font-space-grotesk;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  .h3-dark {
+    @apply text-2xl font-semibold tracking-tight md:text-3xl text-bg-prim font-space-grotesk;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+
+  /* Paragraph variants */
+  .p-large {
+    @apply text-lg md:text-xl text-txt-sec font-sans leading-relaxed;
+    max-width: 65ch;
+  }
+  
+  .p-small {
+    @apply text-sm text-txt-sec font-sans leading-relaxed;
+    max-width: 60ch;
+  }
+
+  /* Utility classes */
+  code {
+    @apply font-mono text-accent-prim;
+  }
+  
+  button {
+    @apply font-space-grotesk font-bold text-lg leading-none;
+  }
+
+  /* Component classes */
   .split-reveal > span {
     @apply block;
   }

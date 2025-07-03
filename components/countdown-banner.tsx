@@ -47,8 +47,8 @@ export default function CountdownBanner() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-bg-light font-space-grotesk font-bold text-xl md:text-2xl">Applications Close In:</h3>
-            <p className="text-bg-light/80">Secure your spot before the deadline</p>
+            <h3 className="h3-subsection text-bg-light font-space-grotesk">Applications Close In:</h3>
+            <p className="p-small text-bg-light/80">Secure your spot before the deadline</p>
           </div>
 
           <div className="grid grid-cols-4 gap-2 md:gap-4">

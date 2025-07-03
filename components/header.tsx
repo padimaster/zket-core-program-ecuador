@@ -71,8 +71,8 @@ export default function Header() {
             <SheetContent side="left" className="bg-bg-prim text-bg-light border-txt-sec/20">
               <div className="flex flex-col space-y-6 pt-6">
                 <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-                  <Mountain className="h-8 w-8 text-accent-prim" />
-                  <span className="sr-only">Global Foundations</span>
+                  <Image src="/logo.png" alt="ZKET Core Program" width={40} height={40} />
+                  <span className="sr-only">ZKET Core Program</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
                   {navItems.map((item) => (

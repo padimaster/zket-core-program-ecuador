@@ -36,7 +36,7 @@ export default function MentorsPage() {
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-[url('/placeholder.svg?height=600&width=400')] bg-cover bg-center opacity-20 md:opacity-40"></div>
           <div className="container relative z-10 px-4 md:px-6">
             <div className="max-w-2xl">
-              <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6">Meet Our Mentors</h1>
+              <h1>Meet Our Mentors</h1>
               <div className="flex flex-col md:flex-row items-start gap-6 mb-8">
                 <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-2 border-accent-prim">
                   <Image
@@ -48,9 +48,9 @@ export default function MentorsPage() {
                   />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold mb-1">{featuredMentor.name}</h2>
+                  <h2 className="h2-section mb-1">{featuredMentor.name}</h2>
                   <p className="text-accent-yellow font-space-grotesk mb-4">{featuredMentor.role}</p>
-                  <p className="text-txt-sec mb-4">{featuredMentor.bio}</p>
+                  <p className="mb-4">{featuredMentor.bio}</p>
                   <div className="flex space-x-4">
                     <a
                       href={featuredMentor.github}
@@ -82,7 +82,7 @@ export default function MentorsPage() {
                   </div>
                 </div>
               </div>
-              <p className="text-txt-sec">
+              <p>
                 Our mentors are industry leaders and experts in zero-knowledge proofs, cryptography, and blockchain
                 technology. They provide guidance, code reviews, and career advice throughout the program.
               </p>
@@ -94,7 +94,7 @@ export default function MentorsPage() {
       {/* Mentor Grid */}
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tight mb-8 text-center">Mentor Team</h2>
+          <h2 className="h2-dark text-center mb-8">Mentor Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherMentors.map((mentor, i) => (
               <Card key={i} className="group overflow-hidden bg-bg-prim border border-txt-sec/20 card-hover">
@@ -133,9 +133,9 @@ export default function MentorsPage() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-1">{mentor.name}</h3>
+                  <h3 className="h3-subsection mb-1">{mentor.name}</h3>
                   <p className="text-accent-yellow font-space-grotesk text-sm mb-3">{mentor.role}</p>
-                  <p className="text-txt-sec text-sm">{mentor.bio}</p>
+                  <p className="p-small">{mentor.bio}</p>
                 </CardContent>
               </Card>
             ))}

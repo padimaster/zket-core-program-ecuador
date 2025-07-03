@@ -44,8 +44,8 @@ export default function ResourcesPage() {
       <section className="py-16 md:py-24 bg-bg-prim">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6 text-bg-light">Learning Resources</h1>
-            <p className="text-txt-sec text-lg mb-8">
+            <h1>Learning Resources</h1>
+            <p className="p-large mb-8">
               Curated materials for the official ZKET Core Program Ecuador curriculum. 
               6 weeks of intensive Programmable Cryptography (ProgCrypto) training.
             </p>
@@ -65,8 +65,8 @@ export default function ResourcesPage() {
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-4 text-bg-prim">Official 6-Week Curriculum</h2>
-            <p className="text-txt-sec max-w-2xl mx-auto">
+            <h2 className="h2-dark">Official 6-Week Curriculum</h2>
+            <p className="p-large mx-auto">
               Based on the ZKET Core Program Ecuador by the ZK Education Team of the Ethereum Foundation
             </p>
           </div>
@@ -78,8 +78,8 @@ export default function ResourcesPage() {
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-sm text-accent-prim font-semibold">Week {weekIndex + 1}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-bg-light mb-3">{week.title}</h3>
-                  <p className="text-txt-sec mb-4">{week.description}</p>
+                  <h3 className="h3-subsection mb-3">{week.title}</h3>
+                  <p className="mb-4">{week.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {week.technologies.map((tech, i) => (
                       <span key={i} className="text-xs bg-accent-prim/20 text-accent-prim px-3 py-1 rounded-full border border-accent-prim/30">
@@ -95,7 +95,7 @@ export default function ResourcesPage() {
                       <BookOpen className="h-4 w-4 text-accent-prim" />
                       <span className="font-medium text-bg-light">Readings</span>
                     </div>
-                    <p className="text-txt-sec text-sm mb-3">Essential materials and documentation</p>
+                    <p className="p-small mb-3">Essential materials and documentation</p>
                     <Button variant="link" className="p-0 h-auto text-accent-prim hover:text-accent-yellow">
                       View Materials
                     </Button>
@@ -106,7 +106,7 @@ export default function ResourcesPage() {
                       <Video className="h-4 w-4 text-accent-prim" />
                       <span className="font-medium text-bg-light">Videos</span>
                     </div>
-                    <p className="text-txt-sec text-sm mb-3">Lectures and workshop recordings</p>
+                    <p className="p-small mb-3">Lectures and workshop recordings</p>
                     <Button variant="link" className="p-0 h-auto text-accent-prim hover:text-accent-yellow">
                       Watch Now
                     </Button>
@@ -117,7 +117,7 @@ export default function ResourcesPage() {
                       <Code className="h-4 w-4 text-accent-prim" />
                       <span className="font-medium text-bg-light">Code</span>
                     </div>
-                    <p className="text-txt-sec text-sm mb-3">Starter repo and exercises</p>
+                    <p className="p-small mb-3">Starter repo and exercises</p>
                     <Button variant="link" className="p-0 h-auto text-accent-prim hover:text-accent-yellow">
                       View Repo
                     </Button>
@@ -129,8 +129,8 @@ export default function ResourcesPage() {
 
           <div className="mt-12 text-center">
             <div className="bg-bg-prim border border-txt-sec/20 rounded-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-xl font-bold text-bg-light mb-4">Program Information</h3>
-              <p className="text-txt-sec mb-6">
+              <h3 className="h3-subsection mb-4">Program Information</h3>
+              <p className="mb-6">
                 This curriculum is based on the official ZKET Core Program Ecuador by the 
                 <strong className="text-accent-prim"> ZK Education Team of the Ethereum Foundation</strong>. 
                 All materials are designed for intensive 6-week training in Programmable Cryptography.

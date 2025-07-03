@@ -11,9 +11,9 @@ const faqItems = [
     category: "Program",
     questions: [
       {
-        question: "What is the Global Foundations program?",
+        question: "What is the ZKET Core Program?",
         answer:
-          "Global Foundations is an intensive 6-week program designed to transform talented developers into zero-knowledge proof specialists and open-source contributors. The program focuses on building practical skills in programmable cryptography with an emphasis on real-world applications.",
+          "ZKET Core Program is an intensive 6-week program designed to transform talented developers into zero-knowledge proof specialists and open-source contributors. The program focuses on building practical skills in programmable cryptography with an emphasis on real-world applications.",
       },
       {
         question: "Where is the program located?",
@@ -111,8 +111,8 @@ export default function FAQPage() {
       <section className="py-16 md:py-24 bg-bg-prim">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6">Frequently Asked Questions</h1>
-            <p className="text-txt-sec text-lg mb-8">
+            <h1>Frequently Asked Questions</h1>
+            <p className="p-large mb-8">
               Find answers to common questions about the Global Foundations program.
             </p>
 
@@ -163,17 +163,17 @@ export default function FAQPage() {
                   <AccordionItem key={i} value={`item-${i}`} className="border-txt-sec/20">
                     <AccordionTrigger className="text-left">
                       <div>
-                        <span className="text-lg font-space-grotesk">{item.question}</span>
+                        <span className="h3-subsection">{item.question}</span>
                         <div className="text-xs text-accent-yellow mt-1">{item.category}</div>
                       </div>
                     </AccordionTrigger>
-                    <AccordionContent className="text-txt-sec">{item.answer}</AccordionContent>
+                    <AccordionContent className="p">{item.answer}</AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>
             ) : (
               <div className="text-center py-12">
-                <p className="text-txt-sec">No questions found matching your search.</p>
+                <p>No questions found matching your search.</p>
                 <Button
                   variant="link"
                   onClick={() => {

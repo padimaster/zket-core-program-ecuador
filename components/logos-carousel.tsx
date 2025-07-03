@@ -64,7 +64,7 @@ export default function LogosCarousel() {
   return (
     <section className="py-16 bg-bg-prim">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tight text-center mb-12 md:text-4xl">Our Partners</h2>
+        <h2 className="h2-section text-center mb-12">Our Partners</h2>
 
         <div ref={scrollRef} className="overflow-hidden whitespace-nowrap" style={{ scrollbarWidth: "none" }}>
           <div ref={containerRef} className="inline-flex space-x-12 py-4">

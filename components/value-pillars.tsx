@@ -25,8 +25,8 @@ export default function ValuePillars() {
     <section className="py-16 md:py-24">
       <div className="container px-4 mx-auto md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 md:text-4xl">Why Choose ZK Core Program?</h2>
-          <p className="text-lg text-txt-sec max-w-3xl mx-auto">
+          <h2 className="h2-dark mb-4">Why Choose ZK Core Program?</h2>
+          <p className="p-large mx-auto">
             Our program is built on three fundamental pillars that set us apart from traditional coding bootcamps 
             and ensure you're prepared for the future of technology
           </p>
@@ -36,10 +36,10 @@ export default function ValuePillars() {
             <Card key={index} className="bg-transparent border-none shadow-none">
               <CardHeader className="flex flex-row items-center gap-4 pb-4">
                 <div className="p-3 rounded-full bg-accent-prim/10">{pillar.icon}</div>
-                <CardTitle className="text-xl">{pillar.title}</CardTitle>
+                <CardTitle className="h3-dark">{pillar.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-txt-sec">{pillar.description}</p>
+                <p>{pillar.description}</p>
               </CardContent>
             </Card>
           ))}

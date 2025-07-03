@@ -77,16 +77,16 @@ export default function CurriculumTimeline() {
                     <div className="font-bold text-accent-prim">{item.week}</div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">{item.title}</h3>
+                    <h3 className="h3-subsection">{item.title}</h3>
                   </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pb-6 pl-4 border-l-2 border-accent-prim/20 ml-7">
                 <div className="pl-8">
-                  <p className="mb-4 text-txt-sec">{item.description}</p>
+                  <p className="mb-4">{item.description}</p>
                   <div className="mb-4">
                     <h4 className="mb-2 font-semibold">Key Topics:</h4>
-                    <ul className="space-y-1 list-disc list-inside text-txt-sec">
+                    <ul className="p-small space-y-1 list-disc list-inside">
                       {item.topics.map((topic) => (
                         <li key={topic}>{topic}</li>
                       ))}

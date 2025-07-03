@@ -8,10 +8,10 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-bg-prim">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6 text-bg-light">
+            <h1>
               About ZKET Core Program Ecuador
             </h1>
-            <p className="text-txt-sec text-lg">
+            <p className="p-large">
               Welcome to the ZKET Core Program Ecuador 2025, an initiative by the 
               <strong> ZK Education Team of the Ethereum Foundation</strong>. 
               This is your opportunity to dive deep into Programmable Cryptography (ProgCrypto) 
@@ -34,7 +34,7 @@ export default function AboutPage() {
       {/* Timeline */}
       <section className="py-12 md:py-16 overflow-hidden">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tight mb-12 text-center text-bg-prim">
+          <h2 className="h2-dark text-center mb-12">
             Our Journey
           </h2>
 
@@ -50,12 +50,12 @@ export default function AboutPage() {
                     <div className="w-3 h-3 rounded-full bg-bg-light"></div>
                   </div>
                   <div className="pl-12 md:pl-0 md:pr-12 pt-2">
-                    <h3 className="text-2xl font-bold mb-2 text-white">2023 - Asia</h3>
-                    <p className="text-txt-sec mb-4">
+                    <h3>2023 - Asia</h3>
+                    <p>
                       Launched our first cohort in Singapore, focusing on
                       privacy-preserving computation and zero-knowledge proofs.
                     </p>
-                    <ul className="text-txt-sec text-sm space-y-1">
+                    <ul className="p-small space-y-1">
                       <li>Graduates from 3 countries</li>
                     </ul>
                   </div>
@@ -71,14 +71,14 @@ export default function AboutPage() {
                     <div className="w-3 h-3 rounded-full bg-bg-light"></div>
                   </div>
                   <div className="pl-12 md:pl-12 pt-2">
-                    <h3 className="text-2xl font-bold mb-2 text-white">
+                    <h3>
                       2024 - Expanded to Latam
                     </h3>
-                    <p className="text-txt-sec mb-4">
+                    <p>
                       Expanded to Costa Rica, Argentina, and Ecuador with a
                       focus on building the next generation of ZK Contributors.
                     </p>
-                    <ul className="text-txt-sec text-sm space-y-1">
+                    <ul className="p-small space-y-1">
                       <li>Graduates from 6 countries</li>
                     </ul>
                   </div>
@@ -94,13 +94,13 @@ export default function AboutPage() {
                     <div className="w-3 h-3 rounded-full bg-bg-light"></div>
                   </div>
                   <div className="pl-12 md:pl-0 md:pr-12 pt-2">
-                    <h3 className="text-2xl font-bold mb-2 text-white">2025 - Ecuador</h3>
-                    <p className="text-txt-sec mb-4">
+                    <h3>2025 - Ecuador</h3>
+                    <p>
                       The official ZKET Core Program Ecuador by the ZK Education Team 
                       of the Ethereum Foundation, focusing on Programmable Cryptography 
                       and building the next generation of ZK specialists in Quito.
                     </p>
-                    <ul className="text-txt-sec text-sm space-y-1">
+                    <ul className="p-small space-y-1">
                       <li>6-week intensive ProgCrypto curriculum</li>
                       <li>25 spots available • 100% free program</li>
                       <li>Technologies: Circom, Cairo, Noir, Plonkathon</li>
@@ -116,7 +116,7 @@ export default function AboutPage() {
       {/* Numbers Counter */}
       <section className="py-12 md:py-16 bg-bg-prim/90">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tight mb-12 text-center text-bg-light">
+          <h2 className="h2-section text-center mb-12">
             ZKET Program Impact
           </h2>
 
@@ -125,28 +125,28 @@ export default function AboutPage() {
               <div className="text-4xl font-mono font-bold text-accent-prim mb-2">
                 6
               </div>
-              <p className="text-txt-sec">Intensive Weeks</p>
+              <p>Intensive Weeks</p>
             </div>
 
             <div className="p-6">
               <div className="text-4xl font-mono font-bold text-accent-prim mb-2">
                 25
               </div>
-              <p className="text-txt-sec">Available Spots</p>
+              <p>Available Spots</p>
             </div>
 
             <div className="p-6">
               <div className="text-4xl font-mono font-bold text-accent-prim mb-2">
                 100%
               </div>
-              <p className="text-txt-sec">Free Program</p>
+              <p>Free Program</p>
             </div>
 
             <div className="p-6">
               <div className="text-4xl font-mono font-bold text-accent-prim mb-2">
                 4
               </div>
-              <p className="text-txt-sec">Core Technologies</p>
+              <p>Core Technologies</p>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function AboutPage() {
       {/* Photo Gallery */}
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tight mb-8 text-center text-white">
+          <h2 className="h2-dark text-center mb-8">
             Photo Gallery
           </h2>
 

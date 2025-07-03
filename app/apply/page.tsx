@@ -51,13 +51,13 @@ export default function ApplyPage() {
             </div>
             
             {/* Main headline with hook */}
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-white">
+            <h1 className="h1-hero mb-6">
               Transform Into a
               <span className="block text-accent-prim">ZK Expert</span>
             </h1>
             
             {/* Compelling subheadline */}
-            <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="p-large mx-auto mb-12">
               Join the world's most exclusive zero-knowledge proof program. 
               6 weeks in Ecuador. 100% free. Elite mentorship.
             </p>
@@ -73,8 +73,8 @@ export default function ApplyPage() {
               
               {/* Social proof and urgency */}
               <div className="mt-4 text-center">
-                <p className="text-sm text-gray-400 mx-auto">
-                  Only 25 spots available • Application takes 10 minutes
+                <p className="p-small mx-auto">
+                  Only 15 spots available • Application takes 10 minutes
                 </p>
               </div>
             </div>
@@ -83,19 +83,19 @@ export default function ApplyPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-gray-600">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-accent-prim mb-1">6</div>
-                <div className="text-sm text-gray-400">Weeks</div>
+                <div className="p-small">Weeks</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-accent-prim mb-1">15</div>
-                <div className="text-sm text-gray-400">Spots</div>
+                <div className="p-small">Spots</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-accent-prim mb-1">3</div>
-                <div className="text-sm text-gray-400">Scholarships</div>
+                <div className="p-small">Scholarships</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-accent-prim mb-1">100%</div>
-                <div className="text-sm text-gray-400">Free</div>
+                <div className="p-small">Free</div>
               </div>
             </div>
           </div>
@@ -106,8 +106,8 @@ export default function ApplyPage() {
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Application Process</h2>
-            <p className="text-txt-sec text-lg max-w-2xl mx-auto">
+            <h2 className="h2-dark">Application Process</h2>
+            <p className="p-large mx-auto">
               Follow these simple steps to join our exclusive program. The entire process is designed to be quick and straightforward.
             </p>
           </div>
@@ -126,12 +126,12 @@ export default function ApplyPage() {
                   <Card className="flex-1 md:max-w-sm bg-white border border-gray-200 hover:border-accent-prim/40 transition-all duration-300 ml-4 md:ml-0 md:mr-6">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-lg font-bold text-gray-900">Submit Application</h3>
+                        <h3 className="h3-dark text-gray-900">Submit Application</h3>
                         <span className="text-xs bg-accent-yellow text-white px-2 py-1 rounded-full whitespace-nowrap">
                           ~10 min
                         </span>
                       </div>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="p-small text-gray-600">
                         Complete our streamlined application form with your background, experience, and motivation.
                       </p>
                     </CardContent>
@@ -150,12 +150,12 @@ export default function ApplyPage() {
                   <Card className="flex-1 md:max-w-sm bg-white border border-gray-200 hover:border-accent-yellow/40 transition-all duration-300 ml-4 md:ml-6 md:order-1">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-lg font-bold text-gray-900">Technical Interview</h3>
+                        <h3 className="h3-dark text-gray-900">Technical Interview</h3>
                         <span className="text-xs bg-accent-yellow text-white px-2 py-1 rounded-full whitespace-nowrap">
                           ~30 min
                         </span>
                       </div>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="p-small text-gray-600">
                         A friendly conversation with our mentors to understand your technical background and goals.
                       </p>
                     </CardContent>
@@ -174,12 +174,12 @@ export default function ApplyPage() {
                   <Card className="flex-1 md:max-w-sm bg-white border border-gray-200 hover:border-accent-prim/40 transition-all duration-300 ml-4 md:ml-0 md:mr-6">
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-lg font-bold text-gray-900">Final Decision</h3>
+                        <h3 className="h3-dark text-gray-900">Final Decision</h3>
                         <span className="text-xs bg-accent-yellow text-white px-2 py-1 rounded-full whitespace-nowrap">
                           Aug 3rd
                         </span>
                       </div>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="p-small text-gray-600">
                         Selected candidates receive their acceptance notification via email with next steps.
                       </p>
                     </CardContent>
@@ -192,16 +192,20 @@ export default function ApplyPage() {
 
             {/* Call to Action */}
             <div className="text-center mt-12 p-6 bg-white border border-gray-200 rounded-lg">
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Ready to Start Your Journey?</h3>
-              <p className="text-gray-600 mb-6">
+              <h3 className="h3-dark text-gray-900 mb-2">Ready to Start Your Journey?</h3>
+              <p className="p-small text-gray-600 mb-6">
                 The application takes less than 10 minutes. Don't wait – spots are limited!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link href="https://forms.gle/MeCuAGk5r8VjamtX8" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-accent-prim hover:bg-accent-yellow text-white transition-colors duration-300">
                     Start Application
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
+                <Button variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50 hover:text-gray-700">
+                  Learn More
+                </Button>
               </div>
             </div>
           </div>
@@ -209,78 +213,38 @@ export default function ApplyPage() {
       </section>
 
       {/* Acceptance Criteria */}
-      <section className="py-16 md:py-20 bg-bg-prim">
+      <section className="py-12 md:py-16 bg-bg-prim/90">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight mb-4 md:text-4xl text-white">Are You Our Ideal Candidate?</h2>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              We're looking for passionate developers ready to push the boundaries of cryptography.
+            <h2 className="h2-section">What We're Looking For</h2>
+            <p className="p-large mx-auto">
+              We seek motivated individuals ready to commit to an intensive learning experience and make meaningful contributions to the ZK ecosystem.
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {acceptanceCriteria.map((criterion, i) => (
-              <Card key={i} className="bg-white border border-gray-200 hover:border-accent-prim/50 transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-accent-prim mr-4">
-                      <div className="text-white">
-                        {criterion.icon}
-                      </div>
-                    </div>
-                    <h3 className="font-bold text-gray-900">
-                      {criterion.title}
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {criterion.description}
-                  </p>
-                </CardContent>
-              </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {acceptanceCriteria.map((criteria, index) => (
+              <div key={index} className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-prim/10 text-accent-prim mb-6">
+                  {criteria.icon}
+                </div>
+                <h3 className="h3-subsection mb-4">{criteria.title}</h3>
+                <p className="p-small">{criteria.description}</p>
+              </div>
             ))}
           </div>
 
-          {/* Self-Assessment CTA */}
-          <div className="max-w-3xl mx-auto">
-            <Card className="bg-white border border-gray-200">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                  Ready to Transform Your Career?
-                </h3>
-                <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                  If you match most of these criteria and you're excited about zero-knowledge proofs, 
-                  we want to hear from you.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-8">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-accent-prim mb-1">6 weeks</div>
-                    <div className="text-sm text-gray-500">Intensive Training</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-accent-prim mb-1">100%</div>
-                    <div className="text-sm text-gray-500">Free Program</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-accent-prim mb-1">Elite</div>
-                    <div className="text-sm text-gray-500">Mentorship</div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Link href="https://forms.gle/MeCuAGk5r8VjamtX8" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-accent-prim hover:bg-accent-yellow text-white transition-colors duration-300">
-                      Apply Now
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </Link>
-                </div>
-
-                <div className="mt-6 text-xs text-gray-500">
-                  Limited spots available
-                </div>
-              </CardContent>
-            </Card>
+          <div className="text-center mt-16">
+            <h3 className="h3-subsection mb-4">Ready to Transform Your Career?</h3>
+            <p className="p-large mx-auto mb-8">
+              If this sounds like you, we'd love to hear your story and learn about your goals.
+            </p>
+            <Link href="https://forms.gle/MeCuAGk5r8VjamtX8" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-accent-prim hover:bg-accent-yellow text-white transition-colors duration-300">
+                Apply Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

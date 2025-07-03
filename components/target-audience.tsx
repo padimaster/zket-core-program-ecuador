@@ -25,8 +25,8 @@ export default function TargetAudience() {
   return (
     <section className="py-16 md:py-24 bg-bg-prim/90">
       <div className="container px-4 mx-auto text-center md:px-6">
-        <h2 className="text-3xl font-bold tracking-tight mb-4">Is This Program For You?</h2>
-        <p className="max-w-2xl mx-auto mb-10 text-txt-sec">
+        <h2 className="h2-section">Is This Program For You?</h2>
+        <p className="p-large mx-auto mb-10">
           We've designed this program for three key profiles ready to become architects of the decentralized web.
         </p>
         <div className="grid max-w-6xl gap-8 mx-auto md:grid-cols-3">
@@ -34,10 +34,10 @@ export default function TargetAudience() {
             <Card key={index} className="text-left bg-bg-prim border-txt-sec/20">
               <CardHeader className="flex flex-row items-center gap-4 pb-4">
                 <div className="p-3 rounded-full bg-accent-yellow/10">{profile.icon}</div>
-                <CardTitle>{profile.title}</CardTitle>
+                <CardTitle className="h3-subsection">{profile.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-txt-sec">{profile.description}</p>
+                <p>{profile.description}</p>
               </CardContent>
             </Card>
           ))}

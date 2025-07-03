@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { Mountain, Zap, TextIcon as Telegram } from "lucide-react";
+import {
+  Mountain,
+  Zap,
+  TextIcon as Telegram,
+  Twitter,
+  Github,
+  Instagram,
+  LinkedinIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -20,7 +28,8 @@ export default function Footer() {
             </span>
           </Link>
           <p className="text-txt-sec text-sm">
-            Building the next generation of ZK Contributors from the center of the world.
+            Building the next generation of ZK Contributors from the center of
+            the world.
           </p>
         </div>
 
@@ -88,24 +97,57 @@ export default function Footer() {
           <h3 className="text-bg-light font-space-grotesk font-semibold text-base">
             Connect
           </h3>
-          <Link
-            href="https://t.me/globalfoundations"
-            className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
-          >
-            <Telegram className="h-4 w-4" />
-            <span>Join our Telegram</span>
-          </Link>
 
-          <div className="flex items-center space-x-2 pt-4">
-            <span className="text-txt-sec text-sm">Theme</span>
-            <Button
-              variant="outline"
-              size="icon"
-              className="h-8 w-8 rounded-full bg-transparent"
+          <div className="flex flex-col space-y-3">
+            <Link
+              href="https://t.me/zklatitudcero"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
             >
-              <Zap className="h-4 w-4" />
-              <span className="sr-only">Toggle theme</span>
-            </Button>
+              <Telegram className="h-4 w-4" />
+              <span>Telegram</span>
+            </Link>
+
+            <Link
+              href="https://twitter.com/zklatitudcero"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
+            >
+              <Twitter className="h-4 w-4" />
+              <span>Twitter</span>
+            </Link>
+
+            <Link
+              href="https://github.com/eth-ecuador"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
+            >
+              <Github className="h-4 w-4" />
+              <span>GitHub</span>
+            </Link>
+
+            <Link
+              href="https://instagram.com/zklatitudcero"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
+            >
+              <Instagram className="h-4 w-4" />
+              <span>Instagram</span>
+            </Link>
+
+            <Link
+              href="https://linkedin.com/company/zklatitudcero"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
+            >
+              <LinkedinIcon className="h-4 w-4" />
+              <span>LinkedIn</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -113,8 +155,7 @@ export default function Footer() {
       <div className="container mt-12 pt-6 border-t border-txt-sec/10">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <p className="text-txt-sec text-xs">
-            © {new Date().getFullYear()} ZK Latitud Cero. All rights
-            reserved.
+            © {new Date().getFullYear()} ZK Latitud Cero. All rights reserved.
           </p>
         </div>
       </div>
