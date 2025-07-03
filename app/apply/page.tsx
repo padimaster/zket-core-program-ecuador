@@ -106,7 +106,7 @@ export default function ApplyPage() {
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="h2-dark">Application Process</h2>
+            <h2 className="h2-section">Application Process</h2>
             <p className="p-large mx-auto">
               Follow these simple steps to join our exclusive program. The entire process is designed to be quick and straightforward.
             </p>

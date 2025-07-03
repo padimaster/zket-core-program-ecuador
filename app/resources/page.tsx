@@ -65,7 +65,7 @@ export default function ResourcesPage() {
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="h2-dark">Official 6-Week Curriculum</h2>
+            <h2 className="h2-section">Official 6-Week Curriculum</h2>
             <p className="p-large mx-auto">
               Based on the ZKET Core Program Ecuador by the ZK Education Team of the Ethereum Foundation
             </p>
