@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             <h1>
-              About ZKET Core Program Ecuador
+              About ZKET Core Program
             </h1>
             <p className="p-large">
               Welcome to the ZKET Core Program Ecuador 2025, an initiative by the 
@@ -23,7 +23,7 @@ export default function AboutPage() {
               contributing to real-world projects.
               <br /><br />
               This immersive program requires genuine commitment and passion for cryptography and mathematics. 
-              With only 25 spots available, we're looking for students and professionals with a strong 
+              With only 15 spots available, we're looking for students and professionals with a strong 
               foundation in programming or mathematics who are ready to push the boundaries of what's possible 
               with zero-knowledge technology.
             </p>
@@ -34,7 +34,7 @@ export default function AboutPage() {
       {/* Timeline */}
       <section className="py-12 md:py-16 overflow-hidden">
         <div className="container px-4 md:px-6">
-          <h2 className="h2-dark text-center mb-12">
+          <h2 className="h2-section text-center mb-12">
             Our Journey
           </h2>
 
@@ -155,7 +155,7 @@ export default function AboutPage() {
       {/* Photo Gallery */}
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
-          <h2 className="h2-dark text-center mb-8">
+          <h2 className="h2-section text-center mb-8">
             Photo Gallery
           </h2>
 

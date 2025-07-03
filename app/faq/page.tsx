@@ -28,7 +28,7 @@ const faqItems = [
       {
         question: "What is the time commitment?",
         answer:
-          "This is a full-time program requiring approximately 40 hours per week. Participants should expect to be engaged Monday through Friday, with some optional weekend activities.",
+          "This is a full-time program requiring approximately 20-30 hours per week. Participants should expect to be engaged Monday through Friday, with some optional weekend activities.",
       },
       {
         question: "What's the real difference between this and a bootcamp that costs thousands of dollars?",

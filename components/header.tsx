@@ -29,10 +29,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-bg-prim/90 border-b border-txt-sec/20">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center w-32">
-          <Link href="/" className="flex items-center">
-            <Image src="/logo.png" alt="Global Foundations" width={40} height={40} />
-            <span className="sr-only">Global Foundations</span>
+        <div className="flex items-center w-40">
+          <Link href="/" className="flex items-center gap-1">
+            <Image src="/logo.png" alt="ZK Latitud Ecuador" width={40} height={40} />
+            <span className="text-bg-light font-space-grotesk font-bold text-xl">ZK L0</span>
           </Link>
         </div>
 
@@ -53,7 +53,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center w-32 justify-end">
+        <div className="flex items-center w-40 justify-end">
           <Link href="/apply">
             <Button className="hidden lg:inline-flex bg-accent-prim hover:bg-accent-yellow text-white transition-colors duration-300">
               Apply Now
@@ -70,9 +70,9 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left" className="bg-bg-prim text-bg-light border-txt-sec/20">
               <div className="flex flex-col space-y-6 pt-6">
-                <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
+                <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
                   <Image src="/logo.png" alt="ZKET Core Program" width={40} height={40} />
-                  <span className="sr-only">ZKET Core Program</span>
+                  <span className="text-bg-light font-space-grotesk font-bold text-xl">ZK L0</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
                   {navItems.map((item) => (

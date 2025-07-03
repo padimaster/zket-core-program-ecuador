@@ -1,80 +1,130 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Badge } from "@/components/ui/badge"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
 
 const curriculum = [
+  // ------------------------- WEEK 1 -------------------------
   {
     week: "Week 1",
-    title: "Open Source Culture & Prerequisites",
+    title: "Course Primer – Open-Source Culture & ZKP Foundations",
     description:
-      "Dive into the fundamentals of open-source collaboration, version control, and the essential software stack for a career in Web3.",
+      "Pre-work to be completed before the cohort begins: master Git/GitHub, understand the public-goods mindset, finish Rustlings, and grasp the basic grammar of zero-knowledge proofs and modular arithmetic.",
     topics: [
-      "Git & GitHub Mastery",
-      "Effective Remote Collaboration",
-      "Intro to Rust",
-      "Web3 Development Environment Setup",
+      "How to Ask for Help & Community Channels",
+      "Open-Source Culture, Public Goods, Feature-Branch Workflow",
+      "Git & GitHub Pull-Request Lifecycle",
+      "Rustlings: 100 Hands-On Mini-Exercises",
+      "High-Level Zero-Knowledge Proofs (soundness, completeness, zero-knowledge)",
+      "Number-Theory Basics: Primes, GCD, Modular Arithmetic, Cyclic Groups",
     ],
-    technologies: [],
+    technologies: ["Git", "GitHub", "Rustlings", "Rust", "JavaScript"],
   },
+
+  // ------------------------- WEEK 2 -------------------------
   {
     week: "Week 2",
-    title: "Math for Cryptography",
+    title: "Classical & Modern Cryptography + Intro to ZKPs",
     description:
-      "Build the mathematical foundation required for modern cryptography, focusing on the concepts that power zero-knowledge proofs.",
-    topics: ["Finite Fields", "Elliptic Curves", "Polynomials & Commitments", "Introduction to ZK Circuits"],
-    technologies: ["Noir", "Circom"],
+      "Review the evolution from symmetric to asymmetric ciphers and why ZKPs are crucial for scalability and privacy on the blockchain.",
+    topics: [
+      "Historical Ciphers → RSA & Diffie–Hellman",
+      "Hash Functions, Commitments & Merkle Trees",
+      "Finite Fields & Elliptic-Curve Math Refresher",
+      "ZK-SNARKs vs ZK-STARKs (Conceptual)",
+      "Circom Syntax & Setup",
+    ],
+    technologies: ["Circom", "snarkjs"],
   },
+
+  // ------------------------- WEEK 3 -------------------------
   {
     week: "Week 3",
-    title: "SNARKs, STARKs, & PLONK",
+    title: "Polynomial Commitments, SNARKs & STARKs in Depth",
     description:
-      "A deep dive into the most important zero-knowledge proof systems. Understand their trade-offs and learn when to apply each one.",
+      "Dive into KZG commitments, trusted setups, and circuit design; start using Cairo to explore programmatic execution proofs.",
     topics: [
-      "ZK-SNARKs vs ZK-STARKs",
-      "PLONKish Arithmetization",
-      "Constraint Systems",
-      "Proof Generation & Verification",
+      "KZG Polynomial Commitments & Trusted Setup",
+      "Constraint Systems & R1CS",
+      "Circuit Optimisation Patterns",
+      "Advanced Circom Techniques",
+      "Intro to Cairo & Starknet Architecture",
     ],
-    technologies: [],
+    technologies: ["Circom", "Cairo", "Starknet"],
   },
+
+  // ------------------------- WEEK 4 -------------------------
   {
     week: "Week 4",
-    title: "ZK-ET Workshop",
+    title: "PLONK & Plonkish Arithmetisation",
     description:
-      "Hands-on, intensive workshops where you'll build practical applications using cutting-edge ZK frameworks.",
+      "Study PLONK (see Vitalik’s blog), explore Plonkish arithmetisation, and build proofs with Noir; introduce Halo2 for privacy-preserving applications.",
     topics: [
-      "Building with Cairo & Starknet",
-      "Advanced Rust for ZK",
-      "Halo2 for Privacy-Preserving Applications",
-      "Performance Optimization",
+      "PLONK Protocol Walk-Through",
+      "Arithmetisation Strategies (Turbo-, Ultra- & Plonkish)",
+      "Polynomial Commitments Revisited",
+      "Building Circuits in Noir",
+      "Halo2 API Basics",
     ],
-    technologies: ["Cairo", "Rust", "Halo2"],
+    technologies: ["Noir", "Halo2", "Rust"],
   },
+
+  // ------------------------- WEEK 5 -------------------------
   {
-    week: "Weeks 5-6",
-    title: "Open Source Contributions & Demo Day",
+    week: "Week 5",
+    title: "ZK-ET Workshop & Contribution Sprint I",
     description:
-      "Apply your new skills by contributing to leading open-source ZK projects under the guidance of your mentors. Prepare and present your capstone project on Demo Day.",
+      "A hybrid week of intensive workshops; the focus is choosing issues in OSS projects and opening your first PRs with close mentorship.",
     topics: [
-      "Finding & Scoping Contributions",
-      "Code Review & PR Etiquette",
-      "Building a Capstone Project",
-      "Pitching & Presentation Skills",
+      "Hands-On Labs (Circom, Cairo, Noir, Halo2)",
+      "Finding & Scoping Good First Issues",
+      "Writing High-Quality PRs & Review Etiquette",
+      "Performance Profiling & Benchmarking",
     ],
-    technologies: [],
+    technologies: ["Circom", "Cairo", "Noir", "Halo2", "Rust"],
   },
-]
+
+  // ------------------------- WEEK 6 -------------------------
+  {
+    week: "Week 6",
+    title: "Contribution Sprint II, Demo Day & ZK Frontiers",
+    description:
+      "Wrap up your contributions, prepare a demonstrable artifact, and present it. We’ll also discuss MPC, FHE, and post-quantum trends.",
+    topics: [
+      "Finalising PRs & Upstream Coordination",
+      "Capstone Packaging & Documentation",
+      "Pitch-Deck & Live-Demo Coaching",
+      "Future Directions: FHE, MPC, Post-Quantum ZK",
+    ],
+    technologies: ["Circom", "Cairo", "Noir", "Halo2", "Rust", "Starknet"],
+  },
+];
 
 export default function CurriculumTimeline() {
   return (
     <section className="py-12 md:py-16">
       <div className="container max-w-4xl px-4 mx-auto md:px-6">
-        <Accordion type="single" collapsible defaultValue="item-0" className="w-full">
+        <Accordion
+          type="single"
+          collapsible
+          defaultValue="item-0"
+          className="w-full"
+        >
           {curriculum.map((item, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-b-txt-sec/20">
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className="border-b-txt-sec/20"
+            >
               <AccordionTrigger className="py-6 text-left hover:no-underline">
                 <div className="flex items-center gap-4">
                   <div className="px-4 py-2 rounded-md bg-accent-prim/10">
-                    <div className="font-bold text-accent-prim">{item.week}</div>
+                    <div className="font-bold text-accent-prim">
+                      {item.week}
+                    </div>
                   </div>
                   <div>
                     <h3 className="h3-subsection">{item.title}</h3>
@@ -97,7 +147,11 @@ export default function CurriculumTimeline() {
                       <h4 className="mb-2 font-semibold">Technologies:</h4>
                       <div className="flex flex-wrap gap-2">
                         {item.technologies.map((tech) => (
-                          <Badge key={tech} variant="secondary" className="bg-accent-yellow/20 text-accent-yellow">
+                          <Badge
+                            key={tech}
+                            variant="secondary"
+                            className="bg-accent-yellow/20 text-accent-yellow"
+                          >
                             {tech}
                           </Badge>
                         ))}
@@ -111,5 +165,5 @@ export default function CurriculumTimeline() {
         </Accordion>
       </div>
     </section>
-  )
+  );
 }

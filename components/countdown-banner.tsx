@@ -53,31 +53,31 @@ export default function CountdownBanner() {
 
           <div className="grid grid-cols-4 gap-2 md:gap-4">
             <div className="flex flex-col items-center">
-              <div className="bg-bg-prim/90 text-accent-yellow font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded flex items-center justify-center animate-flip">
+              <div className="bg-white text-accent-prim font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded-lg flex items-center justify-center animate-flip shadow-lg border border-white/20">
                 {String(timeLeft.days).padStart(2, "0")}
               </div>
-              <span className="text-bg-light text-xs mt-1">Days</span>
+              <span className="text-bg-light text-xs mt-1 font-medium">Days</span>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-bg-prim/90 text-accent-yellow font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded flex items-center justify-center animate-flip">
+              <div className="bg-white text-accent-prim font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded-lg flex items-center justify-center animate-flip shadow-lg border border-white/20">
                 {String(timeLeft.hours).padStart(2, "0")}
               </div>
-              <span className="text-bg-light text-xs mt-1">Hours</span>
+              <span className="text-bg-light text-xs mt-1 font-medium">Hours</span>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-bg-prim/90 text-accent-yellow font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded flex items-center justify-center animate-flip">
+              <div className="bg-white text-accent-prim font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded-lg flex items-center justify-center animate-flip shadow-lg border border-white/20">
                 {String(timeLeft.minutes).padStart(2, "0")}
               </div>
-              <span className="text-bg-light text-xs mt-1">Minutes</span>
+              <span className="text-bg-light text-xs mt-1 font-medium">Minutes</span>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="bg-bg-prim/90 text-accent-yellow font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded flex items-center justify-center animate-flip">
+              <div className="bg-white text-accent-prim font-mono text-2xl md:text-3xl font-bold w-16 h-16 rounded-lg flex items-center justify-center animate-flip shadow-lg border border-white/20">
                 {String(timeLeft.seconds).padStart(2, "0")}
               </div>
-              <span className="text-bg-light text-xs mt-1">Seconds</span>
+              <span className="text-bg-light text-xs mt-1 font-medium">Seconds</span>
             </div>
           </div>
         </div>
