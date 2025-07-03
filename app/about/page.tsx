@@ -102,8 +102,7 @@ export default function AboutPage() {
                     </p>
                     <ul className="p-small space-y-1">
                       <li>6-week intensive ProgCrypto curriculum</li>
-                      <li>25 spots available • 100% free program</li>
-                      <li>Technologies: Circom, Cairo, Noir, Plonkathon</li>
+                      <li>15 spots available • 100% free program</li>
                     </ul>
                   </div>
                 </div>
