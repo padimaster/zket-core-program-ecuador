@@ -3,12 +3,12 @@
 import { useEffect, useRef } from "react"
 
 const programDetails = [
-  { label: "Duration", value: "8 weeks", unit: "weeks" },
-  { label: "Format", value: "In-person", unit: "" },
+  { label: "Duration", value: "6 weeks", unit: "weeks" },
+  { label: "Format", value: "Hybrid", unit: "" },
   { label: "Cost", value: "Free", unit: "" },
-  { label: "Weekly Load", value: "40", unit: "hours" },
-  { label: "Language", value: "English", unit: "" },
-  { label: "Applications", value: "150", unit: "spots" },
+  { label: "Weekly Load", value: "20", unit: "hours" },
+  { label: "Language", value: "Spanish", unit: "" },
+  { label: "Applications", value: "15", unit: "spots" },
 ]
 
 export default function ProgramSnapshot() {

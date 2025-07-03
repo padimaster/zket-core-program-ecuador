@@ -1,12 +1,7 @@
 import Image from "next/image"
 
 const partners = [
-  { name: "USFQ", logo: "/usfq-logo.png" },
-  { name: "UTPL", logo: "/utpl-logo.png" },
-  { name: "ESPE", logo: "/espe-logo.png" },
-  { name: "GDG Quito", logo: "/gdg-quito-logo.png" },
-  { name: "EcuadorInTech", logo: "/ecuadorintech-logo.png" },
-  { name: "CEDIA", logo: "/placeholder.svg?height=40&width=120" },
+  
 ]
 
 export default function StrategicPartners() {

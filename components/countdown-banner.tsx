@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 
-// Target date: August 3, 2025 23:59 ECT (Ecuador Time, UTC-5)
 const targetDate = new Date("2025-08-03T23:59:00-05:00").getTime()
 
 export default function CountdownBanner() {

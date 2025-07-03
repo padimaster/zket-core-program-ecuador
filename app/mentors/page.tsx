@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const mentors = [
   {
-    name: "Dr. Elena Rodriguez",
+    name: "Nicolás Serrano",
     role: "Program Director & ZK Researcher",
-    bio: "Former researcher at Protocol Labs with 10+ years experience in cryptography and distributed systems.",
+    bio: "Blockchain Engineer at Etheruem Foundation",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
@@ -14,50 +14,14 @@ const mentors = [
     featured: true,
   },
   {
-    name: "Michael Chen",
-    role: "Core Contributor, Zama",
-    bio: "Core developer for the Zama FHE library and author of 'Practical Zero-Knowledge Proofs'.",
+    name: "Chris Mata",
+    role: "Blockchain Engineer at Livy Labs",
+    bio: "Core developer",
     image: "/placeholder.svg?height=300&width=300",
     github: "https://github.com",
     twitter: "https://twitter.com",
     linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Sophia Nakamoto",
-    role: "Researcher, Ethereum Foundation PSE",
-    bio: "Cryptography researcher at the Privacy & Scaling Explorations group, specializing in SNARKs.",
-    image: "/placeholder.svg?height=300&width=300",
-    github: "https://github.com",
-    twitter: "https://twitter.com",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Jamal Washington",
-    role: "Lead Engineer, StarkWare",
-    bio: "Lead engineer focusing on ZK rollups and scaling solutions with the Starknet ecosystem.",
-    image: "/placeholder.svg?height=300&width=300",
-    github: "https://github.com",
-    twitter: "https://twitter.com",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Aisha Patel",
-    role: "Founder, ZK-Auth",
-    bio: "Founder of ZK-Auth, building privacy-preserving authentication systems for dApps.",
-    image: "/placeholder.svg?height=300&width=300",
-    github: "https://github.com",
-    twitter: "https://twitter.com",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Carlos Mendez",
-    role: "Regional Lead & Co-founder, EcuadorInTech",
-    bio: "Ecuadorian tech entrepreneur connecting LATAM talent to global blockchain projects.",
-    image: "/placeholder.svg?height=300&width=300",
-    github: "https://github.com",
-    twitter: "https://twitter.com",
-    linkedin: "https://linkedin.com",
-  },
+  }
 ]
 
 export default function MentorsPage() {

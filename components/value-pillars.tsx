@@ -24,6 +24,13 @@ export default function ValuePillars() {
   return (
     <section className="py-16 md:py-24">
       <div className="container px-4 mx-auto md:px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4 md:text-4xl">Why Choose ZK Core Program?</h2>
+          <p className="text-lg text-txt-sec max-w-3xl mx-auto">
+            Our program is built on three fundamental pillars that set us apart from traditional coding bootcamps 
+            and ensure you're prepared for the future of technology
+          </p>
+        </div>
         <div className="grid gap-8 md:grid-cols-3">
           {pillars.map((pillar, index) => (
             <Card key={index} className="bg-transparent border-none shadow-none">

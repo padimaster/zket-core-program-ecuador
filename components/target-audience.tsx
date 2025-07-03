@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { GraduationCap, Briefcase } from "lucide-react"
+import { GraduationCap, Briefcase, Lock } from "lucide-react"
 import Link from "next/link"
 
 const profiles = [
@@ -14,6 +14,11 @@ const profiles = [
     title: "The Dev in Transition",
     description: "For experienced software professionals who want to specialize in the fastest-growing field in tech.",
   },
+  {
+    icon: <Lock className="w-8 h-8 text-accent-yellow" />,
+    title: "The Crypto Enthusiast",
+    description: "For passionate individuals with basic knowledge of mathematics and computer science, ready to dive into programmable cryptography.",
+  },
 ]
 
 export default function TargetAudience() {
@@ -22,9 +27,9 @@ export default function TargetAudience() {
       <div className="container px-4 mx-auto text-center md:px-6">
         <h2 className="text-3xl font-bold tracking-tight mb-4">Is This Program For You?</h2>
         <p className="max-w-2xl mx-auto mb-10 text-txt-sec">
-          We've designed this program for two key profiles ready to become architects of the decentralized web.
+          We've designed this program for three key profiles ready to become architects of the decentralized web.
         </p>
-        <div className="grid max-w-4xl gap-8 mx-auto md:grid-cols-2">
+        <div className="grid max-w-6xl gap-8 mx-auto md:grid-cols-3">
           {profiles.map((profile, index) => (
             <Card key={index} className="text-left bg-bg-prim border-txt-sec/20">
               <CardHeader className="flex flex-row items-center gap-4 pb-4">

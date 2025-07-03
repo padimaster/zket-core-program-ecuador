@@ -53,23 +53,18 @@ const faqItems = [
       {
         question: "What does the application process involve?",
         answer:
-          "The application process consists of two main stages: an initial application form to assess your background and motivation, and a technical interview with program mentors for shortlisted candidates.",
+          "The application process consists of two main stages: an initial application form to assess your background and motivation, and a short interview with program mentors for shortlisted candidates.",
       },
       {
         question: "When will I hear back about my application?",
         answer:
-          "We review applications on a rolling basis. You can expect to hear back within 2-3 weeks of your submission. If selected for an interview, you'll receive instructions to schedule it.",
+          "We review applications on a rolling basis. You can expect to hear back by August 3rd. You'll receive instructions to schedule an interview.",
       },
       {
         question: "Can I apply if I'm not from Ecuador?",
         answer:
-          "Yes, the program is open to international applicants. We aim to create a diverse cohort with participants from various backgrounds and regions.",
-      },
-      {
-        question: "How can I balance this with my university studies?",
-        answer:
-          "This is an intensive, full-time program. It is best suited for students in their final semester, on a break, or who can make special arrangements with their university. The hands-on experience is designed to be a significant career accelerator, often considered equivalent to a high-level internship.",
-      },
+          "Yes, the program is open to international applicants but you must be able to attend in person on Saturdays for the full duration of the program. We aim to create a diverse cohort with participants from various backgrounds and regions.",
+      }
     ],
   },
   {
@@ -135,20 +130,20 @@ export default function FAQPage() {
 
             <div className="flex flex-wrap justify-center gap-2">
               <Button
-                variant={activeCategory === "All" ? "default" : "outline"}
+                variant={activeCategory === "All" ? "default" : "filter"}
                 size="sm"
                 onClick={() => setActiveCategory("All")}
-                className={activeCategory !== "All" ? "border-txt-sec/20" : "bg-accent-prim"}
+                className={activeCategory === "All" ? "bg-accent-prim" : ""}
               >
                 All
               </Button>
               {faqItems.map((category) => (
                 <Button
                   key={category.category}
-                  variant={activeCategory === category.category ? "default" : "outline"}
+                  variant={activeCategory === category.category ? "default" : "filter"}
                   size="sm"
                   onClick={() => setActiveCategory(category.category)}
-                  className={activeCategory !== category.category ? "border-txt-sec/20" : "bg-accent-prim"}
+                  className={activeCategory === category.category ? "bg-accent-prim" : ""}
                 >
                   {category.category}
                 </Button>

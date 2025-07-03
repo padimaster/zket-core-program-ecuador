@@ -26,7 +26,7 @@ const config = {
         "bg-light": "#FFFFFF", // Blanco Nevado
         "txt-sec": "#CCCCCC", // Gris Gaviota
         "accent-red": "#E31837", // Rojo Guacamayo
-        "accent-yellow": "#FFD200", // Amarillo Equinoccial
+        "accent-yellow": "#155724", // Verde Yasuní
         "accent-green": "#155724", // Verde Yasuní
         "accent-brown": "#9F5837", // Siena Andino
 

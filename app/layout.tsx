@@ -30,9 +30,11 @@ const ibmPlexMono = IBMPlexMono({
 })
 
 export const metadata = {
-  title: "Global Foundations",
-  description: "Building the next wave of ZK OSS contributors",
-    generator: 'v0.dev'
+  title: "ZKET Core Program - Ecuador",
+  description: "Building the next generation of ZKP Contributors. From the center of the world. ",
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
