@@ -121,7 +121,7 @@ export default function FAQPage() {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-txt-sec h-4 w-4" />
                 <Input
                   placeholder="Search questions..."
-                  className="pl-10 bg-bg-prim border-txt-sec/20"
+                  className="pl-10 bg-bg-prim border-txt-sec/20 text-bg-light placeholder:text-txt-sec/70"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
@@ -133,7 +133,7 @@ export default function FAQPage() {
                 variant={activeCategory === "All" ? "default" : "filter"}
                 size="sm"
                 onClick={() => setActiveCategory("All")}
-                className={activeCategory === "All" ? "bg-accent-prim" : ""}
+                className={activeCategory === "All" ? "bg-accent-prim text-white" : "text-txt-sec hover:text-white"}
               >
                 All
               </Button>
@@ -143,7 +143,7 @@ export default function FAQPage() {
                   variant={activeCategory === category.category ? "default" : "filter"}
                   size="sm"
                   onClick={() => setActiveCategory(category.category)}
-                  className={activeCategory === category.category ? "bg-accent-prim" : ""}
+                  className={activeCategory === category.category ? "bg-accent-prim text-white" : "text-txt-sec hover:text-white"}
                 >
                   {category.category}
                 </Button>
@@ -154,17 +154,17 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ Accordion */}
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 bg-bg-prim">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             {filteredFAQs.length > 0 ? (
               <Accordion type="single" collapsible className="w-full">
                 {filteredFAQs.map((item, i) => (
-                  <AccordionItem key={i} value={`item-${i}`} className="border-txt-sec/20">
+                  <AccordionItem key={i} value={`item-${i}`} className="border-txt-sec/30">
                     <AccordionTrigger className="text-left">
                       <div>
                         <span className="h3-subsection">{item.question}</span>
-                        <div className="text-xs text-accent-yellow mt-1">{item.category}</div>
+                        <div className="text-xs text-accent-prim mt-1">{item.category}</div>
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="p">{item.answer}</AccordionContent>
@@ -173,14 +173,14 @@ export default function FAQPage() {
               </Accordion>
             ) : (
               <div className="text-center py-12">
-                <p>No questions found matching your search.</p>
+                <p className="text-txt-sec">No questions found matching your search.</p>
                 <Button
                   variant="link"
                   onClick={() => {
                     setSearchQuery("")
                     setActiveCategory("All")
                   }}
-                  className="mt-2 text-accent-prim"
+                  className="mt-2 text-accent-prim hover:text-bg-light"
                 >
                   Clear filters
                 </Button>
