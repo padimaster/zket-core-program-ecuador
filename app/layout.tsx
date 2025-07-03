@@ -37,6 +37,9 @@ export const metadata = {
     icon: "/favicon.png",
   },
   openGraph: {
+    url: "https://www.zkcero.xyz/",
+    type: "website",
+    logo: "/logo.png",
     images: [
       {
         url: "/open-graph.png",
