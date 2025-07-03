@@ -39,7 +39,6 @@ export const metadata = {
   openGraph: {
     url: "https://www.zkcero.xyz/",
     type: "website",
-    logo: "/logo.png",
     images: [
       {
         url: "/open-graph.png",
@@ -59,6 +58,9 @@ export const metadata = {
         height: 630,
       }
     ],
+  },
+  other: {
+    "og:logo": "/logo.png",
   },
 }
 
