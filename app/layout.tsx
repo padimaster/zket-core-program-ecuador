@@ -37,26 +37,25 @@ export const metadata = {
     icon: "/favicon.png",
   },
   openGraph: {
-    url: "https://www.zkcero.xyz/",
-    type: "website",
-    title: "ZKET Core Program - Ecuador",
-    description: "Building the next generation of ZKP Contributors. From the center of the world.",
     images: [
       {
         url: "/open-graph.png",
+        type: "image/png",
         width: 1200,
         height: 630,
-        alt: "ZKET Core Program - Ecuador",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    domain: "zkcero.xyz",
-    url: "https://www.zkcero.xyz/",
-    title: "ZKET Core Program - Ecuador",
-    description: "Building the next generation of ZKP Contributors. From the center of the world.",
-    images: ["/open-graph.png"],
+    images: [
+      {
+        url: "/open-graph.png",
+        type: "image/png",
+        width: 1200,
+        height: 630,
+      }
+    ],
   },
 }
 
