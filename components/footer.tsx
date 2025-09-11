@@ -99,27 +99,27 @@ export default function Footer() {
           </h3>
 
           <div className="flex flex-col space-y-3">
-            <Link
-              href="https://t.me/zklatitudcero"
+            <a
+              href="https://t.me/+AByruislbIQzODJh"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
             >
               <Telegram className="h-4 w-4" />
               <span>Telegram</span>
-            </Link>
+            </a>
 
-            <Link
-              href="https://twitter.com/zklatitudcero"
+            <a
+              href="https://x.com/zkcero"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
             >
               <Twitter className="h-4 w-4" />
               <span>Twitter</span>
-            </Link>
+            </a>
 
-            <Link
+            <a
               href="https://github.com/eth-ecuador"
               target="_blank"
               rel="noopener noreferrer"
@@ -127,27 +127,27 @@ export default function Footer() {
             >
               <Github className="h-4 w-4" />
               <span>GitHub</span>
-            </Link>
+            </a>
 
-            <Link
-              href="https://instagram.com/zklatitudcero"
+            <a
+              href="https://www.instagram.com/zkcero/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
             >
               <Instagram className="h-4 w-4" />
               <span>Instagram</span>
-            </Link>
+            </a>
 
-            <Link
-              href="https://linkedin.com/company/zklatitudcero"
+            <a
+              href="https://www.instagram.com/aaa/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"
             >
               <LinkedinIcon className="h-4 w-4" />
               <span>LinkedIn</span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

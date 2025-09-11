@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Mountain } from "lucide-react"
+import ApplicationButton from "./applicationButton/ApplicationButton"
 import Image from "next/image"
 
 const navItems = [
@@ -54,11 +55,9 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center w-40 justify-end">
-          <Link href="/apply">
-            <Button className="hidden lg:inline-flex bg-accent-prim hover:bg-accent-yellow text-white transition-colors duration-300">
-              Apply Now
-            </Button>
-          </Link>
+
+        <ApplicationButton />
+
 
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
