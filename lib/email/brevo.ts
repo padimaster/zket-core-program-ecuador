@@ -1,24 +1,36 @@
 // lib/email/brevo.ts
 import * as Brevo from "@getbrevo/brevo";
 import { EmailProvider } from "./provider";
-import { AppError } from "@/lib/errors/AppError"; 
+import { AppError } from "@/lib/errors/AppError";
 
+// --- ENVIRONMENT VARIABLE VALIDATION ---
+// Ensure all required keys are defined at startup.
+// If any are missing, the app will fail to start with a clear error.
+const brevoApiKey = process.env.BREVO_API_KEY;
+const senderEmail = process.env.BREVO_SENDER_EMAIL;
+const senderName = process.env.BREVO_SENDER_NAME;
+const recipientEmail = process.env.BREVO_NOTIFICATION_RECIPIENT;
+
+if (!brevoApiKey || !senderEmail || !senderName || !recipientEmail) {
+  throw new Error("Missing required Brevo environment variables.");
+}
+
+// --- API CONFIGURATION ---
 const api = new Brevo.TransactionalEmailsApi();
-api.setApiKey(
-  Brevo.TransactionalEmailsApiApiKeys.apiKey,
-  process.env.BREVO_API_KEY!
-);
+api.setApiKey(Brevo.TransactionalEmailsApiApiKeys.apiKey, brevoApiKey);
+
 
 export class BrevoProvider implements EmailProvider {
   async sendInterestNotification(interestedUserEmail: string): Promise<void> {
+  //  Now using environment variables instead of hardcoded data 
     const sender = {
-      email: "anthonybenavides.edu@gmail.com", 
-      name: "ZK Latitud Cero", 
+      email: senderEmail,
+      name: senderName,
     };
 
     const receivers = [
       {
-        email: "hello@zkcero.xyz", // Reemplaza esto con el correo que recibirá la notificación
+        email: recipientEmail!,
       },
     ];
 
@@ -34,12 +46,7 @@ export class BrevoProvider implements EmailProvider {
       });
       console.log("Notification email sent successfully via Brevo.");
     } catch (error: any) {
-      // Mantenemos el log detallado para nuestra depuración interna
       console.error("Failed to send email via Brevo. Full error details:", JSON.stringify(error, null, 2));
-
-      // 👇 ¡AQUÍ ESTÁ EL CAMBIO! 👇
-      // En lugar de un error genérico, lanzamos nuestro error estructurado.
-      // La API Route se encargará de traducir esto en la respuesta HTTP correcta.
       throw new AppError('BREVO_API_ERROR');
     }
   }
