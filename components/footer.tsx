@@ -140,7 +140,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/aaa/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-txt-sec hover:text-accent-prim transition-colors text-sm"

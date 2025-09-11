@@ -10,6 +10,7 @@ import Link from "next/link";
 import StrategicPartners from "@/components/strategic-partners";
 import TargetAudience from "@/components/target-audience";
 import Image from "next/image";
+import ApplicationButton from "@/components/applicationButton/ApplicationButton";
 
 export default function Home() {
   return (
@@ -27,14 +28,8 @@ export default function Home() {
             training in Quito.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/apply">
-              <Button
-                size="lg"
-                className="text-bg-light bg-accent-prim hover:bg-accent-yellow transition-colors duration-300"
-              >
-                Apply Now!
-              </Button>
-            </Link>
+            <ApplicationButton />
+
             <Link href="/program">
               <Button
                 variant="ghost"

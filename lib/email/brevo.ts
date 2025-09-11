@@ -1,6 +1,7 @@
 // lib/email/brevo.ts
 import * as Brevo from "@getbrevo/brevo";
 import { EmailProvider } from "./provider";
+import { AppError } from "@/lib/errors/AppError"; 
 
 const api = new Brevo.TransactionalEmailsApi();
 api.setApiKey(
@@ -17,7 +18,7 @@ export class BrevoProvider implements EmailProvider {
 
     const receivers = [
       {
-        email: "correoelectronicoele@gmail.com", // Reemplaza esto
+        email: "hello@zkcero.xyz", // Reemplaza esto con el correo que recibirá la notificación
       },
     ];
 
@@ -32,9 +33,14 @@ export class BrevoProvider implements EmailProvider {
         `,
       });
       console.log("Notification email sent successfully via Brevo.");
-    } catch (error) {
-      console.error("Failed to send email via Brevo:", error);
-      throw new Error("Could not send notification email.");
+    } catch (error: any) {
+      // Mantenemos el log detallado para nuestra depuración interna
+      console.error("Failed to send email via Brevo. Full error details:", JSON.stringify(error, null, 2));
+
+      // 👇 ¡AQUÍ ESTÁ EL CAMBIO! 👇
+      // En lugar de un error genérico, lanzamos nuestro error estructurado.
+      // La API Route se encargará de traducir esto en la respuesta HTTP correcta.
+      throw new AppError('BREVO_API_ERROR');
     }
   }
 }
