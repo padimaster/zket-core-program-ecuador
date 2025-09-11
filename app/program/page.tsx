@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import CurriculumTimeline from "@/components/curriculum-timeline"
+import ApplicationButton from "@/components/applicationButton/ApplicationButton"
 import { Calendar, Users, Coffee, Award, MapPin, Clock, Utensils, TrendingUp, CheckCircle, Star, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
@@ -58,12 +59,7 @@ export default function ProgramPage() {
               </div>
             </div>
 
-            <Link href="/apply">
-              <Button size="lg" className="bg-accent-prim hover:bg-accent-yellow text-white transition-colors duration-300">
-                Apply Now - Limited Spots
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
+            <ApplicationButton />
           </div>
         </div>
       </section>
@@ -263,12 +259,8 @@ export default function ProgramPage() {
               </div>
             </div>
 
-            <Link href="/apply">
-              <Button size="lg" className="bg-accent-prim hover:bg-accent-yellow text-white transition-colors duration-300">
-                Start Your ZK Journey Today
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
+            <ApplicationButton />
+
           </div>
         </div>
       </section>

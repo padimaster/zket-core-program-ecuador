@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search, BookOpen, Video, Code, ExternalLink } from "lucide-react"
@@ -38,6 +41,19 @@ const weeklyContent = [
 ]
 
 export default function ResourcesPage() {
+  // State for search input
+  const [search, setSearch] = useState("")
+
+  // Filter curriculum based on search
+  const filteredContent = weeklyContent.filter(week => {
+    const searchLower = search.toLowerCase()
+    return (
+      week.title.toLowerCase().includes(searchLower) ||
+      week.description.toLowerCase().includes(searchLower) ||
+      week.technologies.some(tech => tech.toLowerCase().includes(searchLower))
+    )
+  })
+
   return (
     <div className="flex flex-col w-full">
       {/* Learning Resources Header */}
@@ -52,9 +68,11 @@ export default function ResourcesPage() {
 
             <div className="relative max-w-md mx-auto mb-8">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-txt-sec h-4 w-4" />
-              <Input 
-                placeholder="Search resources..." 
-                className="pl-10 bg-transparent border-txt-sec/30 text-bg-light placeholder:text-txt-sec focus:border-accent-prim" 
+              <Input
+                placeholder="Search resources..."
+                className="pl-10 bg-transparent border-txt-sec/30 text-bg-light placeholder:text-txt-sec focus:border-accent-prim"
+                value={search}
+                onChange={e => setSearch(e.target.value)}
               />
             </div>
           </div>
@@ -72,22 +90,28 @@ export default function ResourcesPage() {
           </div>
 
           <div className="grid gap-6 max-w-4xl mx-auto">
-            {weeklyContent.map((week, weekIndex) => (
-              <div key={weekIndex} className="border border-txt-sec/20 rounded-lg bg-bg-prim p-6">
-                <div className="mb-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-sm text-accent-prim font-semibold">Week {weekIndex + 1}</span>
-                  </div>
-                  <h3 className="h3-subsection mb-3">{week.title}</h3>
-                  <p className="mb-4">{week.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {week.technologies.map((tech, i) => (
-                      <span key={i} className="text-xs bg-accent-prim/20 text-accent-prim px-3 py-1 rounded-full border border-accent-prim/30">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+            {filteredContent.length === 0 ? (
+              <div className="text-center text-txt-sec py-12">No results found.</div>
+            ) : (
+              filteredContent.map((week) => {
+                // Find the original week number from weeklyContent
+                const originalIndex = weeklyContent.findIndex(w => w.title === week.title && w.description === week.description)
+                return (
+                  <div key={week.title} className="border border-txt-sec/20 rounded-lg bg-bg-prim p-6">
+                    <div className="mb-6">
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-sm text-accent-prim font-semibold">Week {originalIndex + 1}</span>
+                      </div>
+                      <h3 className="h3-subsection mb-3">{week.title}</h3>
+                      <p className="mb-4">{week.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {week.technologies.map((tech, i) => (
+                          <span key={i} className="text-xs bg-accent-prim/20 text-accent-prim px-3 py-1 rounded-full border border-accent-prim/30">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
 
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="border border-txt-sec/20 rounded-lg p-4 hover:border-accent-prim/50 transition-colors bg-bg-prim/50">
@@ -124,7 +148,9 @@ export default function ResourcesPage() {
                   </div>
                 </div>
               </div>
-            ))}
+                  )
+                })
+            )}
           </div>
 
           <div className="mt-12 text-center">
